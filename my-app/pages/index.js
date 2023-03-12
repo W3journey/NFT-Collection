@@ -349,15 +349,6 @@ export default function Home() {
       );
     }
 
-    // If connected user is the owner, and presale has started, allow them to pause.
-    if (isOwner && presaleStarted) {
-      return (
-        <button className={styles.button} onClick={pauseSale}>
-          Pause!
-        </button>
-      );
-    }
-
     // If connected user is not the owner but presale hasn't started yet, tell them that
     if (!presaleStarted) {
       return (
